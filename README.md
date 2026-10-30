@@ -1,35 +1,78 @@
 # 🚀 SysPulse Ultimate
 
-**SysPulse Ultimate**, Windows kullanıcıları için geliştirilmiş profesyonel bir donanım izleme, sistem bakım ve optimizasyon merkezidir. Python ve CustomTkinter altyapısıyla modern, şık ve hızlı bir arayüz sunar.
+SysPulse Ultimate, Windows işletim sistemleri için geliştirilmiş, sistem kaynaklarını canlı izleme, donanım bilgilerini görüntüleme, optimizasyon ve bakım işlemlerini tek bir merkezden yürütme imkanı sunan modern bir masaüstü uygulamasıdır.
 
----
+✨ Öne Çıkan Özellikler
 
-## ✨ Özellikler
+📊 Canlı Sistem & Ağ Takibi: Anlık CPU, RAM, Disk kullanımı ve canlı ağ indirme/yükleme hızları.
 
-* **📊 Canlı Sistem İzleme:** Anlık CPU, RAM, Disk kullanımı ve canlı ağ trafiği takibi.
-* **🎮 Grafik Birimi (GPU) Tanıma:** Sistemdeki GPU/iGPU'ları otomatik algılar ve markaya özel logolarla/rozetlerle gösterir.
-* **⚡ İnternet Hız Testi:** Harici ek paketlere ihtiyaç duymadan, Cloudflare altyapısını kullanarak yerleşik ve hızlı ping/indirme testi.
-* **🧹 Sistem Bakım Araçları:** Tek tıkla geçici dosyaları (Temp) temizleme, DNS önbelleği sıfırlama (FlushDNS) ve sistem dosyası onarımı (SFC).
-* **🛠️ Hızlı Windows Araçları:** Görev Yöneticisi, Aygıt Yöneticisi, Denetim Masası ve DxDiag gibi araçlara hızlı erişim.
-* **🌐 Çoklu Dil Desteği:** Türkçe, İngilizce, Almanca ve İspanyolca dil seçenekleri.
-* **📌 Mini Widget Modu:** Masaüstünde küçük bir pencerede sistem durumunu takip etme imkanı.
-* **📄 Raporlama:** Sistem detaylarını tek tıkla `.txt` raporu olarak dışarı aktarma.
+🎮 Otomatik Ekran Kartı (GPU) Algılama: Sistemdeki harici veya dahili grafik birimlerini otomatik tanımlar ve markaya özel logolarla gösterir.
 
----
+⚡ Yerleşik İnternet Hız Testi: Harici kütüphanelere bağımlı kalmadan Cloudflare altyapısı üzerinden hızlı Ping ve İndirme testi.
 
-## 📥 İndir ve Kullan (Son Kullanıcı İçin)
+🧹 Tek Tıkla Sistem Bakımı:
 
-Kaynak kodlarla uğraşmak istemiyorsan, hiçbir ek dosyaya ihtiyaç duymadan, doğrudan tek başına çalışan `.exe` dosyasını indirmek için:
-1. Sağ taraftaki **Releases** bölümüne git.
-2. En son sürümden **`SysPulseUltimate.exe`** dosyasını indir ve doğrudan çalıştır!
+Geçici dosyaları (Temp) temizleme
 
----
+DNS önbelleğini sıfırlama (FlushDNS)
 
-## 🛠️ Geliştiriciler İçin (Kaynak Koddan Çalıştırma)
+Nihai Performans Modunu aktif etme
 
-Eğer projeyi Python ile kendi ortamında çalıştırmak istersen:
+Sistem dosyası onarımı (sfc /scannow)
 
-1. Depoyu klonla:
-   ```bash
-   git clone https://github.com/benreattofficial/SysPulseUltimate.git
-   cd SysPulseUltimate
+🛠️ Hızlı Windows Araçları: Görev Yöneticisi, Aygıt Yöneticisi, Denetim Masası ve DxDiag'a tek tıkla erişim.
+
+🌐 Çoklu Dil Desteği: Türkçe, English, Deutsch ve Español dil seçenekleri.
+
+📌 Masaüstü Widget Modu: Ekranda az yer kaplayan canlı takip pencereli widget desteği.
+
+📄 Raporlama: Sistem özetini .txt formatında dışarı aktarma.
+
+📥 İndirme ve Kullanım (Son Kullanıcılar İçin)
+
+Herhangi bir Python kurulumu veya ek dosya gerektirmeden çalıştırmak için:
+
+Sağ taraftaki Releases bölümüne tıklayın.
+
+SysPulseUltimate.exe dosyasını indirin ve çalıştırın.
+
+💻 Geliştiriciler İçin Kurulum
+
+Projeyi kaynak koddan çalıştırmak veya geliştirmek isterseniz:
+
+Gereksinimler
+
+Python 3.10 veya üzeri
+
+Adımlar
+
+Depoyu klonlayın:
+
+```bash
+git clone https://github.com/benreattofficial/SysPulseUltimate.git
+cd SysPulseUltimate
+```
+
+Gerekli Python paketlerini yükleyin:
+
+```bash
+pip install customtkinter psutil pillow
+```
+
+Uygulamayı çalıştırın:
+
+```bash
+python app.py
+```
+
+📦 Tekli .exe Olarak Derleme (PyInstaller)
+
+Uygulamayı tüm medya dosyaları ve dil seçenekleriyle birlikte tek bir .exe haline getirmek için:
+
+```bash
+python -m PyInstaller --noconsole --onefile --icon="icon.ico" --name "SysPulseUltimate" --add-data "languages.json;." --add-data "*.png;." app.py
+```
+
+📜 Lisans
+
+Bu proje GPL-3.0 lisansı altında lisanslanmıştır. Detaylar için LICENSE dosyasına bakabilirsiniz.
