@@ -2,7 +2,7 @@
 
 SysPulse Ultimate, Windows işletim sistemleri için geliştirilmiş, sistem kaynaklarını canlı izleme, donanım bilgilerini görüntüleme, optimizasyon ve bakım işlemlerini tek bir merkezden yürütme imkanı sunan modern bir masaüstü uygulamasıdır.
 
-✨ Öne Çıkan Özellikler
+# ✨ Öne Çıkan Özellikler
 
 📊 Canlı Sistem & Ağ Takibi: Anlık CPU, RAM, Disk kullanımı ve canlı ağ indirme/yükleme hızları.
 
@@ -36,7 +36,7 @@ Sağ taraftaki Releases bölümüne tıklayın.
 
 SysPulseUltimate.exe dosyasını indirin ve çalıştırın.
 
-💻 Geliştiriciler İçin Kurulum
+# 💻 Geliştiriciler İçin Kurulum
 
 Projeyi kaynak koddan çalıştırmak veya geliştirmek isterseniz:
 
